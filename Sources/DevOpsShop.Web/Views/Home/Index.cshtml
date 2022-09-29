@@ -2,7 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">DevOps Shop</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Providing DevOps tools and furniture to development teams around the world since 1846.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="@Url.Action("Catalog", "Home")" type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Browse the catalog</a>
+      </div>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="~/images/devops-logo.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>

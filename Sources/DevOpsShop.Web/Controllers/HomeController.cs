@@ -23,6 +23,11 @@ namespace DevOpsShop.Web.Controllers
             return View();
         }
 
+        public IActionResult Catalog()
+        {
+            return View (new CatalogViewModel());
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
