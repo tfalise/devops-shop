@@ -11,7 +11,7 @@
     @foreach (var product in Model.Products)
     {
         <div class="row">
-            <div class="col-md-10"><a href="@Url.Action("product", new { id = product.Id })">@product.Name</a></div>
+            <div class="col-md-10"><a href="@Url.Action("Product", new { productId = product.Id })">@product.Name</a></div>
             <div class="col-md-2">@product.Price €</div>
         </div>
     }
